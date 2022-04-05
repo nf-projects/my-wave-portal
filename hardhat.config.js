@@ -1,3 +1,4 @@
+/*
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -16,6 +17,21 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
+/** 
 module.exports = {
   solidity: "0.8.4",
+};
+*/
+
+
+require("@nomiclabs/hardhat-waffle");
+
+module.exports = {
+  solidity: "0.8.0",
+  networks: {
+    rinkeby: {
+      url: "YOUR_ALCHEMY_API_URL",
+      accounts: ["YOUR_PRIVATE_RINKEBY_ACCOUNT_KEY"]
+    },
+  },
 };
