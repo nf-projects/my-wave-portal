@@ -1,6 +1,7 @@
 Smart contract & scripts. Made using the [buildspace tutorial](https://buildspace.so/)
 
 # Setting up
+(might need to do terminal commands, then clone repo)
 1. clone repo
 2. terminal commands
 ```shell
