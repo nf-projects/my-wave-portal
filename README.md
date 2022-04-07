@@ -19,6 +19,11 @@ npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs
 npx hardhat run scripts/run.js
 ```
 
+# Re-Deploying
+1. `npx hardhat run scripts/deploy.js --network rinkeby`
+2. Change contractAddress in App.js to be the new contract address from the command above
+3. Get the updated abi file from `artifacts` and paste it into the React App
+
 # Hardhat Commands
 ```shell
 npx hardhat accounts
