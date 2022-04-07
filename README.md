@@ -10,8 +10,9 @@ npx hardhat
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
 ```
 2. Delete files `contracts/Greeter.sol`, `scripts/sample-script.js`, `.gitignore`, `README.md`, `package.json`, `package-lock.json`, `test/sample-test.js`
-3. Clone this repo
-4. Create `hardhat.config.js` with account details
+3. Delete the `contracts` and `scripts` folders
+4. Clone this repo
+5. Create `hardhat.config.js` with account details
 
 # Running
 ```shell
