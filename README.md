@@ -1,16 +1,5 @@
 Smart contract & scripts. Made using the [buildspace tutorial](https://buildspace.so/)
 
-# Hardhat Commands
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
-
 # Setting up
 1. clone repo
 2. terminal commands
@@ -24,4 +13,15 @@ npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs
 # Running
 ```shell
 npx hardhat run scripts/run.js
+```
+
+# Hardhat Commands
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
 ```
