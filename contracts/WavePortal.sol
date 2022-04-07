@@ -30,6 +30,12 @@ contract WavePortal {
         waves.push(Wave(msg.sender, _message, block.timestamp));
 
         emit NewWave(msg.sender, block.timestamp, _message);
+
+        uint256 prizeAmount = 0.0001 ether;
+        require(prizeAmount <= address(this).balance, "Not enough ether to pay for prize :(");
+
+        (bool success, ) = (msg.sender).call{value: prizeAmount}("");
+        require(success, "Failed to withdraw ether!");
     }
 
     function getAllWaves() public view returns (Wave[] memory) {
