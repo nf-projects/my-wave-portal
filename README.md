@@ -2,14 +2,15 @@ Smart contract & scripts. Made using the [buildspace tutorial](https://buildspac
 
 # Setting up
 (might need to do terminal commands, then clone repo)
-1. clone repo
-2. terminal commands
+1. Terminal commands:
 ```shell
 npm init -y
 npm install --save-dev hardhat
 npx hardhat
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
 ```
+2. Delete files `contracts/Greeter.sol`, `scripts/sample-script.js`, `.gitignore`, `README.md`, `package.json`, `package-lock.json`
+3. Clone this repo
 
 # Running
 ```shell
